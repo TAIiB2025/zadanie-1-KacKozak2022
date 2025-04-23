@@ -1,0 +1,16 @@
+<table [ngClass]="{'promocja': product.czyPromocja}">
+    <tr>
+        <th>Nazwa</th>
+        <th>Cena</th>
+        <th>Data utworzenia</th>
+        <th>Dodaj do koszyka</th>
+        <th>Liczba sztuk w koszyku</th>
+    </tr>
+    <tr>
+        <td>{{product.nazwa}}</td>
+        <td>{{product.cena}}</td>
+        <td>{{product.dataUtworzenia}}</td>
+        <td><button (click)="onDodajDoKoszyka()">Dodaj</button></td>
+        <td>{{product.sztuki}}</td>
+    </tr>
+</table>
